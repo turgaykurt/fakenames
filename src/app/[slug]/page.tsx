@@ -5,6 +5,7 @@ import BlogPost from "@/components/BlogPost";
 import blogPosts from "@/data/blogPosts.json";
 import { useEffect } from "react";
 
+// blogPosts.json dosyanızdaki veri yapısına göre tip tanımları
 interface Name {
     gender: string;
     name: string;
@@ -31,7 +32,6 @@ const BlogPostPage = () => {
         if (post) {
             document.title = `${post.baslik}`;
 
-            // Dinamik description meta etiketini ayarlama
             const metaDescription = document.querySelector(
                 'meta[name="description"]'
             );
