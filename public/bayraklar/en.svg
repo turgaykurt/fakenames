@@ -1,0 +1,26 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_406_508" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+<rect width="64" height="64" rx="32" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_406_508)">
+<mask id="mask1_406_508" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-32" y="0" width="128" height="64">
+<path d="M-32 0V64H96V0H-32Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_406_508)">
+<path d="M-32 0V64H96V0H-32Z" fill="#012169"/>
+<path d="M-32 0L96 64ZM96 0L-32 64Z" fill="black"/>
+<path d="M-32 0L96 64M96 0L-32 64" stroke="white" stroke-width="12.8"/>
+<mask id="mask2_406_508" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-32" y="0" width="128" height="64">
+<path d="M32 32H96V64L32 32ZM32 32V64H-32L32 32ZM32 32H-32V0L32 32ZM32 32V0H96L32 32Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_406_508)">
+<path d="M-32 0L96 64ZM96 0L-32 64Z" fill="black"/>
+<path d="M-32 0L96 64M96 0L-32 64" stroke="#C8102E" stroke-width="8.53333"/>
+</g>
+<path d="M32 0V64ZM-32 32H96Z" fill="black"/>
+<path d="M32 0V64M-32 32H96" stroke="white" stroke-width="21.3333"/>
+<path d="M32 0V64ZM-32 32H96Z" fill="black"/>
+<path d="M32 0V64M-32 32H96" stroke="#C8102E" stroke-width="12.8"/>
+</g>
+</g>
+</svg>
