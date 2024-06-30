@@ -48,7 +48,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <BlogPost post={post} />
+            <BlogPost post={post as BlogPostType} />
         </div>
     );
 };
