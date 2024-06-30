@@ -50,11 +50,7 @@ const BlogPostPage = () => {
         return <div>Post not found</div>;
     }
 
-    return (
-        <div>
-            <BlogPost post={post} />
-        </div>
-    );
+    return <div>{post && <BlogPost post={post} />}</div>;
 };
 
 export default BlogPostPage;
