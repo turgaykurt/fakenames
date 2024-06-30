@@ -125,6 +125,10 @@ button {
 
 /* Telefon */
 @media (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+    }
+
     .kapsayici {
         padding: 0px 30px;
     }
@@ -252,6 +256,7 @@ button {
         left: -240px;
         position: fixed;
         padding-top: 40px;
+        background: #ffffff;
     }
 
     .closebtn {
@@ -264,21 +269,24 @@ button {
 }
 
 .blogpost {
-    margin: 20px;
+    padding: 20px 20px;
+}
+
+.blogpost .blogpostic {
     padding: 20px 30px;
     background: #f5f8fb;
     border-radius: 10px;
     border: 1px solid #d9dde0;
 }
 
-.blogpost .butonlar {
+.blogpost .blogpostic .butonlar {
     display: flex;
     gap: 10px;
     border-bottom: 1px solid #3b82f6;
     margin: 30px 0px;
 }
 
-.blogpost .butonlar .buton {
+.blogpost .blogpostic .butonlar .buton {
     background: #ebf3fe;
     color: #3b82f6;
     padding: 10px 40px;
@@ -287,17 +295,17 @@ button {
     transition: all 0.3s;
 }
 
-.blogpost .butonlar .buton:hover {
+.blogpost .blogpostic .butonlar .buton:hover {
     color: #295bac;
     background: #d8e6fd;
 }
 
-.blogpost .butonlar .buton.active {
+.blogpost .blogpostic .butonlar .buton.active {
     background: #3b82f6;
     color: #ffffff;
 }
 
-.blogpost ol {
+.blogpost .blogpostic ol {
     margin: 0px 0px 0px -20px;
     padding: 0px;
     list-style: none;
@@ -305,7 +313,7 @@ button {
     column-gap: 40px;
 }
 
-.blogpost ol li {
+.blogpost .blogpostic ol li {
     display: grid;
     grid-template-columns: 20px 1fr;
     gap: 10px;
@@ -316,19 +324,19 @@ button {
     justify-content: start;
 }
 
-.blogpost ol li:hover {
+.blogpost .blogpostic ol li:hover {
     color: #3b82f6;
 }
 
-.blogpost ol li svg {
+.blogpost .blogpostic ol li svg {
     opacity: 0;
 }
 
-.blogpost ol li:hover svg {
+.blogpost .blogpostic ol li:hover svg {
     opacity: 1;
 }
 
-.blogpost .alarm {
+.blogpost .blogpostic .alarm {
     padding: 20px;
     background: #3b82f6;
     color: #fff;
@@ -343,7 +351,15 @@ button {
 
 /* Telefon */
 @media (max-width: 767px) {
-    .blogpost ol {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .blogpost .blogpostic .butonlar .buton {
+        padding: 10px 20px;
+    }
+
+    .blogpost .blogpostic ol {
         column-count: 1;
         column-gap: 0px;
     }
