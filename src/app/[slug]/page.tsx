@@ -5,9 +5,27 @@ import BlogPost from "@/components/BlogPost";
 import blogPosts from "@/data/blogPosts.json";
 import { useEffect } from "react";
 
+interface Name {
+    gender: string;
+    name: string;
+}
+
+interface BlogPostType {
+    id: number;
+    ulke_kodu: string;
+    ulke_adi: string;
+    menu_adi: string;
+    baslik: string;
+    slug: string;
+    aciklama: string;
+    isimler: Name[];
+}
+
 const BlogPostPage = () => {
     const { slug } = useParams();
-    const post = blogPosts.find((post) => post.slug === slug);
+    const post: BlogPostType | undefined = blogPosts.find(
+        (post) => post.slug === slug
+    );
 
     useEffect(() => {
         if (post) {
