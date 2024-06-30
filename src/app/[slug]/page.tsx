@@ -23,9 +23,9 @@ interface BlogPostType {
 
 const BlogPostPage = () => {
     const { slug } = useParams();
-    const post: BlogPostType | undefined = blogPosts.find(
-        (post) => post.slug === slug
-    );
+    const post = blogPosts.find((post) => post.slug === slug) as
+        | BlogPostType
+        | undefined;
 
     useEffect(() => {
         if (post) {
@@ -51,7 +51,7 @@ const BlogPostPage = () => {
 
     return (
         <div>
-            <BlogPost post={post as BlogPostType} />
+            <BlogPost post={post} />
         </div>
     );
 };
