@@ -12,7 +12,6 @@ interface Name {
 }
 
 interface BlogPostType {
-    id: number;
     ulke_kodu: string;
     ulke_adi: string;
     menu_adi: string;
@@ -52,7 +51,7 @@ const BlogPostPage = () => {
 
     return (
         <div>
-            <BlogPost post={post as BlogPostType} />
+            <BlogPost post={post} />
         </div>
     );
 };

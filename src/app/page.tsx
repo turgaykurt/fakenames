@@ -11,7 +11,6 @@ interface Name {
 }
 
 interface BlogPostType {
-    id: number;
     ulke_kodu: string;
     ulke_adi: string;
     menu_adi: string;
@@ -29,7 +28,6 @@ const HomePage = () => {
         if (post) {
             document.title = `${post.baslik}`;
 
-            // Dinamik description meta etiketini ayarlama
             const metaDescription = document.querySelector(
                 'meta[name="description"]'
             );
@@ -50,7 +48,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <BlogPost post={post as BlogPostType} />
+            <BlogPost post={post} />
         </div>
     );
 };
