@@ -28,6 +28,10 @@ const BlogPostPage = () => {
         }
     }, [post]);
 
+    if (!post) {
+        return <div>Post not found</div>;
+    }
+
     return (
         <div>
             <BlogPost post={post} />
