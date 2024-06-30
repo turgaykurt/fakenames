@@ -11,6 +11,7 @@ interface Name {
 }
 
 interface BlogPostType {
+    id: number;
     ulke_kodu: string;
     ulke_adi: string;
     menu_adi: string;
@@ -22,7 +23,9 @@ interface BlogPostType {
 
 const HomePage = () => {
     const defaultSlug = "random-dummy-american-female-and-male-names";
-    const post = blogPosts.find((post) => post.slug === defaultSlug);
+    const post = blogPosts.find((post) => post.slug === defaultSlug) as
+        | BlogPostType
+        | undefined;
 
     useEffect(() => {
         if (post) {
@@ -48,7 +51,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <BlogPost post={post as BlogPostType} />
+            <BlogPost post={post} />
         </div>
     );
 };
