@@ -12,6 +12,7 @@ interface Name {
 }
 
 interface BlogPostType {
+    id: number; // id özelliğini zorunlu hale getirin
     ulke_kodu: string;
     ulke_adi: string;
     menu_adi: string;
